@@ -6,9 +6,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#c9a227">
 
-<title>Rovél STORE | Luxury Accessories</title>
+<title>ROVÉL STORE | Luxury Accessories</title>
 
 <style>
+
+/* ================= ROOT ================= */
 
 :root{
     --gold:#c9a227;
@@ -68,6 +70,9 @@ img{
     max-width:100%;
     display:block;
 }
+
+
+/* ================= HEADER ================= */
 
 header{
     position:sticky;
@@ -165,6 +170,9 @@ body.dark .icon-btn{
     display:none;
 }
 
+
+/* ================= LANGUAGE ================= */
+
 .lang-switch{
     display:flex;
     align-items:center;
@@ -191,6 +199,9 @@ body.dark .lang-switch{
     background:var(--gold);
     color:#fff;
 }
+
+
+/* ================= HERO SLIDER ================= */
 
 .hero{
     min-height:650px;
@@ -290,6 +301,9 @@ body.dark .lang-switch{
     width:100%;
 }
 
+
+/* HERO DOTS */
+
 .slider-dots{
     position:absolute;
     bottom:30px;
@@ -316,6 +330,9 @@ body.dark .lang-switch{
     background:var(--gold);
 }
 
+
+/* ================= GENERAL ================= */
+
 section{
     padding:90px 20px;
 }
@@ -341,6 +358,9 @@ section{
     font-size:38px;
     margin-top:8px;
 }
+
+
+/* ================= CATEGORIES ================= */
 
 .categories{
     display:grid;
@@ -399,6 +419,9 @@ section{
     margin-top:5px;
     color:#ddd;
 }
+
+
+/* ================= PRODUCTS ================= */
 
 .products-section{
     background:#fff;
@@ -615,6 +638,9 @@ body.dark .filter{
     background:var(--gold);
 }
 
+
+/* ================= COUNTDOWN ================= */
+
 .countdown{
     background:#111;
     color:#fff;
@@ -655,6 +681,9 @@ body.dark .filter{
 .time small{
     color:#aaa;
 }
+
+
+/* ================= PROMO ================= */
 
 .promo{
     background:#151515;
@@ -704,6 +733,9 @@ body.dark .filter{
     margin-bottom:25px;
 }
 
+
+/* ================= FEATURES ================= */
+
 .features{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -732,6 +764,9 @@ body.dark .filter{
     font-size:13px;
     line-height:1.7;
 }
+
+
+/* ================= FOOTER ================= */
 
 footer{
     background:#111;
@@ -789,6 +824,9 @@ footer h3{
     color:#777;
     font-size:12px;
 }
+
+
+/* ================= CART ================= */
 
 .overlay{
     position:fixed;
@@ -926,6 +964,9 @@ body.dark .qty button{
     margin-bottom:13px;
 }
 
+
+/* ================= PRODUCT MODAL ================= */
+
 .modal{
     position:fixed;
     inset:0;
@@ -1041,6 +1082,9 @@ body.dark .detail-qty button{
     color:#fff;
 }
 
+
+/* ================= TOAST ================= */
+
 .toast{
     position:fixed;
     bottom:25px;
@@ -1059,6 +1103,9 @@ body.dark .detail-qty button{
     transform:translateY(0);
     opacity:1;
 }
+
+
+/* ================= WHATSAPP ================= */
 
 .whatsapp{
     position:fixed;
@@ -1082,6 +1129,9 @@ body.dark .detail-qty button{
     transform:scale(1.1);
 }
 
+
+/* ================= TOP ================= */
+
 .top{
     position:fixed;
     bottom:88px;
@@ -1102,6 +1152,9 @@ body.dark .detail-qty button{
     pointer-events:auto;
 }
 
+
+/* ================= RESPONSIVE ================= */
+
 @media(max-width:1050px){
 
     .products-grid{
@@ -1116,6 +1169,7 @@ body.dark .detail-qty button{
         grid-template-columns:1fr 1fr;
     }
 }
+
 
 @media(max-width:750px){
 
@@ -1186,6 +1240,7 @@ body.dark .detail-qty button{
     }
 }
 
+
 @media(max-width:450px){
 
     .categories{
@@ -1233,15 +1288,20 @@ body.dark .detail-qty button{
 </style>
 </head>
 
+
 <body>
+
+
+<!-- ================= HEADER ================= -->
 
 <header>
 
 <nav class="navbar">
 
 <div class="logo">
-Rovél STORE<span>.</span>
+ROVÉL STORE<span>.</span>
 </div>
+
 
 <ul class="nav-links" id="navLinks">
 
@@ -1252,6 +1312,7 @@ Rovél STORE<span>.</span>
 <li><a href="#contact">تواصل معنا</a></li>
 
 </ul>
+
 
 <div class="nav-actions">
 
@@ -1277,6 +1338,7 @@ EN
 
 </div>
 
+
 <button
 class="icon-btn"
 onclick="toggleTheme()">
@@ -1284,6 +1346,7 @@ onclick="toggleTheme()">
 🌙
 
 </button>
+
 
 <button
 class="icon-btn"
@@ -1299,6 +1362,7 @@ id="cartCount">
 
 </button>
 
+
 <button
 class="icon-btn menu-btn"
 onclick="toggleMenu()">
@@ -1313,31 +1377,39 @@ onclick="toggleMenu()">
 
 </header>
 
+
+<!-- ================= HERO SLIDER ================= -->
+
 <section class="hero" id="home">
 
+
 <div class="hero-slider">
+
 
 <img
 class="hero-slide active"
 src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1800&q=85"
-alt="Rovél Accessories">
+alt="ROVÉL Accessories">
+
 
 <img
 class="hero-slide"
 src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1800&q=85"
-alt="Rovél Watches">
+alt="ROVÉL Watches">
+
 
 <img
 class="hero-slide"
 src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1800&q=85"
-alt="Rovél Perfumes">
+alt="ROVÉL Perfumes">
 
 </div>
+
 
 <div class="hero-content">
 
 <div class="hero-tag">
-Rovél STORE
+ROVÉL STORE
 </div>
 
 <h1 id="heroTitle">
@@ -1346,7 +1418,7 @@ Rovél STORE
 </h1>
 
 <p id="heroText">
-اكتشف تشكيلة Rovél STORE من الإكسسوارات
+اكتشف تشكيلة ROVÉL STORE من الإكسسوارات
 والساعات والبرفانات المختارة بعناية
 لتضيف لمسة من الفخامة إلى إطلالتك.
 </p>
@@ -1361,6 +1433,7 @@ id="heroButton">
 </a>
 
 </div>
+
 
 <div class="slider-dots">
 
@@ -1383,6 +1456,9 @@ onclick="goToSlide(2)">
 
 </section>
 
+
+<!-- ================= CATEGORIES ================= -->
+
 <section id="categories">
 
 <div class="container">
@@ -1399,7 +1475,9 @@ SHOP BY CATEGORY
 
 </div>
 
+
 <div class="categories">
+
 
 <div
 class="category"
@@ -1423,6 +1501,7 @@ alt="Accessories">
 
 </div>
 
+
 <div
 class="category"
 onclick="filterProducts('watches')">
@@ -1444,6 +1523,7 @@ alt="Watches">
 </div>
 
 </div>
+
 
 <div
 class="category"
@@ -1467,11 +1547,15 @@ alt="Perfumes">
 
 </div>
 
+
 </div>
 
 </div>
 
 </section>
+
+
+<!-- ================= PRODUCTS ================= -->
 
 <section
 class="products-section"
@@ -1491,7 +1575,9 @@ OUR COLLECTION
 
 </div>
 
+
 <div class="filters">
+
 
 <div class="search">
 
@@ -1503,6 +1589,7 @@ placeholder="ابحث عن منتج..."
 oninput="searchProducts()">
 
 </div>
+
 
 <select
 class="sort"
@@ -1526,6 +1613,7 @@ onchange="sortProducts()">
 </option>
 
 </select>
+
 
 <div class="filter-wrap">
 
@@ -1557,6 +1645,7 @@ onclick="filterProducts('perfumes',this)">
 
 </div>
 
+
 <div
 class="products-grid"
 id="productsGrid">
@@ -1565,6 +1654,9 @@ id="productsGrid">
 </div>
 
 </section>
+
+
+<!-- ================= COUNTDOWN ================= -->
 
 <section
 class="countdown"
@@ -1579,6 +1671,7 @@ id="offers">
 <p>
 خصم خاص على مجموعة مختارة — لا تفوّت العرض!
 </p>
+
 
 <div class="timer">
 
@@ -1608,19 +1701,24 @@ id="offers">
 
 </section>
 
+
+<!-- ================= PROMO ================= -->
+
 <section class="promo">
 
 <div class="container">
 
 <div class="promo-box">
 
+
 <div class="promo-img">
 
 <img
 src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1000&q=85"
-alt="Rovél Perfumes">
+alt="ROVÉL Perfumes">
 
 </div>
+
 
 <div class="promo-content">
 
@@ -1654,11 +1752,15 @@ class="btn">
 
 </section>
 
+
+<!-- ================= FEATURES ================= -->
+
 <section>
 
 <div class="container">
 
 <div class="features">
+
 
 <div class="feature">
 
@@ -1676,6 +1778,7 @@ class="btn">
 
 </div>
 
+
 <div class="feature">
 
 <div class="feature-icon">
@@ -1691,6 +1794,7 @@ class="btn">
 </p>
 
 </div>
+
 
 <div class="feature">
 
@@ -1708,6 +1812,7 @@ class="btn">
 
 </div>
 
+
 <div class="feature">
 
 <div class="feature-icon">
@@ -1724,20 +1829,25 @@ class="btn">
 
 </div>
 
+
 </div>
 
 </div>
 
 </section>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer id="contact">
 
 <div class="footer-grid">
 
+
 <div class="footer-brand">
 
 <h2>
-Rovél STORE<span>.</span>
+ROVÉL STORE<span>.</span>
 </h2>
 
 <p>
@@ -1746,6 +1856,7 @@ Rovél STORE<span>.</span>
 </p>
 
 </div>
+
 
 <div>
 
@@ -1777,6 +1888,7 @@ Rovél STORE<span>.</span>
 
 </div>
 
+
 <div>
 
 <h3>
@@ -1800,6 +1912,7 @@ Rovél STORE<span>.</span>
 </ul>
 
 </div>
+
 
 <div>
 
@@ -1839,13 +1952,17 @@ WhatsApp
 
 </div>
 
+
 <div class="copyright">
 
-©️ 2026 Rovél STORE — جميع الحقوق محفوظة
+© 2026 ROVÉL STORE — جميع الحقوق محفوظة
 
 </div>
 
 </footer>
+
+
+<!-- ================= CART ================= -->
 
 <div
 class="overlay"
@@ -1867,10 +1984,12 @@ onclick="closeCart()">
 
 </div>
 
+
 <div
 class="cart-items"
 id="cartItems">
 </div>
+
 
 <div class="cart-foot">
 
@@ -1900,6 +2019,9 @@ onclick="orderViaWhatsApp()">
 
 </div>
 
+
+<!-- ================= PRODUCT MODAL ================= -->
+
 <div
 class="modal"
 id="productModal">
@@ -1914,6 +2036,7 @@ onclick="closeProduct()">
 
 </button>
 
+
 <div class="product-details">
 
 <div class="detail-img">
@@ -1923,6 +2046,7 @@ id="detailImage"
 alt="Product">
 
 </div>
+
 
 <div class="detail-info">
 
@@ -1952,6 +2076,7 @@ class="detail-desc">
 
 </p>
 
+
 <div class="detail-qty">
 
 <button onclick="detailQty(-1)">
@@ -1967,6 +2092,7 @@ class="detail-desc">
 </button>
 
 </div>
+
 
 <button
 class="btn full"
@@ -1984,6 +2110,9 @@ onclick="addDetailToCart()">
 
 </div>
 
+
+<!-- ================= WHATSAPP ================= -->
+
 <a
 class="whatsapp"
 href="https://wa.me/201147435039"
@@ -1992,6 +2121,7 @@ target="_blank">
 ☎
 
 </a>
+
 
 <button
 class="top"
@@ -2002,12 +2132,16 @@ onclick="window.scrollTo({top:0,behavior:'smooth'})">
 
 </button>
 
+
 <div
 class="toast"
 id="toast">
 </div>
 
+
 <script>
+
+/* ================= PRODUCTS ================= */
 
 const products=[
 
@@ -2083,8 +2217,8 @@ image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&
 
 {
 id:8,
-nameAr:"Rovél Signature",
-nameEn:"Rovél Signature Perfume",
+nameAr:"ROVÉL Signature",
+nameEn:"ROVÉL Signature Perfume",
 category:"perfumes",
 price:899,
 oldPrice:1099,
@@ -2093,8 +2227,8 @@ image:"https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&
 
 {
 id:9,
-nameAr:"Rovél Black",
-nameEn:"Rovél Black Perfume",
+nameAr:"ROVÉL Black",
+nameEn:"ROVÉL Black Perfume",
 category:"perfumes",
 price:799,
 oldPrice:999,
@@ -2103,8 +2237,8 @@ image:"https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&
 
 {
 id:10,
-nameAr:"Rovél Gold",
-nameEn:"Rovél Gold Perfume",
+nameAr:"ROVÉL Gold",
+nameEn:"ROVÉL Gold Perfume",
 category:"perfumes",
 price:999,
 oldPrice:1199,
@@ -2113,9 +2247,12 @@ image:"https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&
 
 ];
 
-let cart=JSON.parse(localStorage.getItem("rovelCart"))||[];
 
-let favorites=JSON.parse(localStorage.getItem("rovelFavorites"))||[];
+/* ================= VARIABLES ================= */
+
+let cart=JSON.parse(localStorage.getItem("ROVÉLCart"))||[];
+
+let favorites=JSON.parse(localStorage.getItem("ROVÉLFavorites"))||[];
 
 let currentCategory="all";
 
@@ -2123,14 +2260,17 @@ let currentDetail=null;
 
 let detailQuantity=1;
 
-let currentLanguage=localStorage.getItem("rovelLanguage")||"ar";
+let currentLanguage=localStorage.getItem("ROVÉLLanguage")||"ar";
+
+
+/* ================= LANGUAGE ================= */
 
 function setLanguage(lang){
 
 currentLanguage=lang;
 
 localStorage.setItem(
-"rovelLanguage",
+"ROVÉLLanguage",
 lang
 );
 
@@ -2150,7 +2290,7 @@ document.getElementById("heroTitle").innerHTML=
 "Elegance starts<br>with the details.";
 
 document.getElementById("heroText").textContent=
-"Discover Rovél STORE's collection of accessories, watches and perfumes, carefully selected to add a touch of luxury to your look.";
+"Discover ROVÉL STORE's collection of accessories, watches and perfumes, carefully selected to add a touch of luxury to your look.";
 
 document.getElementById("heroButton").textContent=
 "Shop Now →";
@@ -2161,7 +2301,7 @@ document.getElementById("heroTitle").innerHTML=
 "أناقة تبدأ<br>من التفاصيل.";
 
 document.getElementById("heroText").textContent=
-"اكتشف تشكيلة Rovél STORE من الإكسسوارات والساعات والبرفانات المختارة بعناية لتضيف لمسة من الفخامة إلى إطلالتك.";
+"اكتشف تشكيلة ROVÉL STORE من الإكسسوارات والساعات والبرفانات المختارة بعناية لتضيف لمسة من الفخامة إلى إطلالتك.";
 
 document.getElementById("heroButton").textContent=
 "تسوق الآن ←";
@@ -2174,6 +2314,9 @@ updateCart();
 
 }
 
+
+/* ================= PRICE ================= */
+
 function formatPrice(price){
 
 return currentLanguage==="ar"
@@ -2182,6 +2325,7 @@ return currentLanguage==="ar"
 
 }
 
+
 function getName(product){
 
 return currentLanguage==="ar"
@@ -2189,6 +2333,7 @@ return currentLanguage==="ar"
 : product.nameEn;
 
 }
+
 
 function getCategory(category){
 
@@ -2210,6 +2355,9 @@ perfumes:"برفانات"
 
 }
 
+
+/* ================= PRODUCTS ================= */
+
 function renderProducts(list=products){
 
 const grid=document.getElementById("productsGrid");
@@ -2226,6 +2374,7 @@ grid.innerHTML=`
 return;
 
 }
+
 
 list.forEach(p=>{
 
@@ -2251,11 +2400,12 @@ ${currentLanguage==="ar"?"خصم":"SALE"}
 class="wish ${liked?"active":""}"
 onclick="event.stopPropagation();toggleFavorite(${p.id},this)">
 
-${liked?"♥️":"♡"}
+${liked?"♥":"♡"}
 
 </button>
 
 </div>
+
 
 <div class="product-info">
 
@@ -2305,6 +2455,9 @@ onclick="addToCart(${p.id})">
 
 }
 
+
+/* ================= FILTER ================= */
+
 function filterProducts(category,button){
 
 currentCategory=category;
@@ -2336,6 +2489,7 @@ b.classList.add("active");
 
 }
 
+
 let list=products;
 
 if(category!=="all"){
@@ -2354,6 +2508,9 @@ behavior:"smooth"
 });
 
 }
+
+
+/* ================= SEARCH ================= */
 
 function searchProducts(){
 
@@ -2389,6 +2546,9 @@ renderProducts(list);
 
 }
 
+
+/* ================= SORT ================= */
+
 function sortProducts(){
 
 let list=[...products];
@@ -2417,6 +2577,9 @@ renderProducts(list);
 
 }
 
+
+/* ================= FAVORITES ================= */
+
 function toggleFavorite(id,button){
 
 if(favorites.includes(id)){
@@ -2433,16 +2596,19 @@ favorites.push(id);
 
 button.classList.add("active");
 
-button.textContent="♥️";
+button.textContent="♥";
 
 }
 
 localStorage.setItem(
-"rovelFavorites",
+"ROVÉLFavorites",
 JSON.stringify(favorites)
 );
 
 }
+
+
+/* ================= CART ================= */
 
 function addToCart(id,quantity=1){
 
@@ -2479,16 +2645,18 @@ currentLanguage==="ar"
 
 }
 
+
 function saveCart(){
 
 localStorage.setItem(
-"rovelCart",
+"ROVÉLCart",
 JSON.stringify(cart)
 );
 
 updateCart();
 
 }
+
 
 function updateCart(){
 
@@ -2500,8 +2668,10 @@ const count=cart.reduce(
 document.getElementById("cartCount")
 .textContent=count;
 
+
 const container=
 document.getElementById("cartItems");
+
 
 if(!cart.length){
 
@@ -2579,6 +2749,7 @@ ${currentLanguage==="ar"?"حذف المنتج":"Remove"}
 
 }
 
+
 const total=cart.reduce(
 (sum,item)=>
 sum+item.price*item.quantity,
@@ -2589,6 +2760,7 @@ document.getElementById("cartTotal")
 .textContent=formatPrice(total);
 
 }
+
 
 function changeQuantity(id,amount){
 
@@ -2612,6 +2784,7 @@ saveCart();
 
 }
 
+
 function removeFromCart(id){
 
 cart=cart.filter(
@@ -2622,6 +2795,9 @@ saveCart();
 
 }
 
+
+/* ================= CART OPEN ================= */
+
 function openCart(){
 
 document
@@ -2630,6 +2806,7 @@ document
 
 }
 
+
 function closeCart(){
 
 document
@@ -2637,6 +2814,9 @@ document
 .classList.remove("active");
 
 }
+
+
+/* ================= PRODUCT MODAL ================= */
 
 function openProduct(id){
 
@@ -2666,6 +2846,7 @@ document
 
 }
 
+
 function closeProduct(){
 
 document
@@ -2673,6 +2854,7 @@ document
 .classList.remove("active");
 
 }
+
 
 function detailQty(amount){
 
@@ -2686,6 +2868,7 @@ document.getElementById("detailQty")
 
 }
 
+
 function addDetailToCart(){
 
 if(!currentDetail)return;
@@ -2698,6 +2881,9 @@ detailQuantity
 closeProduct();
 
 }
+
+
+/* ================= WHATSAPP ================= */
 
 function orderViaWhatsApp(){
 
@@ -2713,8 +2899,10 @@ return;
 
 }
 
+
 let message=
-"🛍️ *Rovél STORE - New Order*\n\n";
+"🛍️ *ROVÉL STORE - New Order*\n\n";
+
 
 cart.forEach(item=>{
 
@@ -2740,6 +2928,7 @@ item.price*item.quantity
 
 });
 
+
 const total=cart.reduce(
 (sum,item)=>
 sum+item.price*item.quantity,
@@ -2753,6 +2942,7 @@ message+=
 "💰 *Order Total: "+
 formatPrice(total)+"*";
 
+
 const url=
 "https://wa.me/201147435039?text="+
 encodeURIComponent(message);
@@ -2761,24 +2951,30 @@ window.open(url,"_blank");
 
 }
 
+
+/* ================= DARK MODE ================= */
+
 function toggleTheme(){
 
 document.body.classList.toggle("dark");
 
 localStorage.setItem(
-"rovelDark",
+"ROVÉLDark",
 document.body.classList.contains("dark")
 );
 
 }
 
 if(
-localStorage.getItem("rovelDark")==="true"
+localStorage.getItem("ROVÉLDark")==="true"
 ){
 
 document.body.classList.add("dark");
 
 }
+
+
+/* ================= MOBILE MENU ================= */
 
 function toggleMenu(){
 
@@ -2787,6 +2983,7 @@ document
 .classList.toggle("active");
 
 }
+
 
 document
 .querySelectorAll(".nav-links a")
@@ -2801,6 +2998,9 @@ document
 });
 
 });
+
+
+/* ================= TOAST ================= */
 
 function showToast(message){
 
@@ -2819,6 +3019,9 @@ toast.classList.remove("show");
 
 }
 
+
+/* ================= HERO SLIDER ================= */
+
 const heroSlides=
 document.querySelectorAll(".hero-slide");
 
@@ -2826,6 +3029,7 @@ const heroDots=
 document.querySelectorAll(".dot");
 
 let currentSlide=0;
+
 
 function showHeroSlide(index){
 
@@ -2845,6 +3049,7 @@ heroDots[index]
 
 }
 
+
 function goToSlide(index){
 
 currentSlide=index;
@@ -2852,6 +3057,7 @@ currentSlide=index;
 showHeroSlide(currentSlide);
 
 }
+
 
 function nextHeroSlide(){
 
@@ -2869,15 +3075,20 @@ showHeroSlide(currentSlide);
 
 }
 
+
 setInterval(
 nextHeroSlide,
 4000
 );
 
+
+/* ================= COUNTDOWN ================= */
+
 const endDate=
 Date.now()+
 (3*24*60*60*1000)+
 (7*60*60*1000);
+
 
 function updateCountdown(){
 
@@ -2929,6 +3140,9 @@ updateCountdown,
 
 updateCountdown();
 
+
+/* ================= TOP BUTTON ================= */
+
 window.addEventListener(
 "scroll",
 ()=>{
@@ -2948,6 +3162,9 @@ top.classList.remove("show");
 
 });
 
+
+/* ================= CLOSE OVERLAYS ================= */
+
 document
 .getElementById("cartOverlay")
 .addEventListener("click",e=>{
@@ -2957,6 +3174,7 @@ closeCart();
 
 });
 
+
 document
 .getElementById("productModal")
 .addEventListener("click",e=>{
@@ -2965,6 +3183,9 @@ if(e.target===e.currentTarget)
 closeProduct();
 
 });
+
+
+/* ================= ESC ================= */
 
 document.addEventListener(
 "keydown",
@@ -2978,6 +3199,9 @@ closeProduct();
 }
 
 });
+
+
+/* ================= START ================= */
 
 setLanguage(currentLanguage);
 
